@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="dark" style="color-scheme: dark; --scroll-margin-top: 64px;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+    <title>Prudhvi Sai | CSE Student & Developer</title>
+    <meta name="description" content="Portfolio of Tallapalem Prudhvi Sai, B.Tech CSE student (2022–2026) at Saveetha School of Engineering. Passionate developer skilled in Python, Java, Kotlin, Machine Learning, and Web Development. View projects, certifications, and contact for opportunities.">
+    <meta name="author" content="Tallapalem Prudhvi Sai">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="script" href="script.js">
+    </head>
+    <body class="antialiased">
+
+        <!-- Navigation -->
+        <nav class="nav-bar fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-8">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400" data-screen="dashboard">TPS</a>
+                <div class="nav-links-container flex flex-wrap gap-1 md:gap-3">
+                    <a href="#" class="nav-link flex items-center gap-1 px-3 py-1.5 rounded-lg text-gray-200 font-medium " data-screen="dashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="nav-link flex items-center gap-1 px-3 py-1.5 rounded-lg text-gray-300 font-medium transition-all" data-screen="Educations">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <span>Education</span>
+                    </a>
+                    <a href="#" class="nav-link flex items-center gap-1 px-3 py-1.5 rounded-lg text-gray-300 font-medium transition-all" data-screen="Projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#" class="nav-link flex items-center gap-1 px-3 py-1.5 rounded-lg text-gray-300 font-medium transition-all" data-screen="Certifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M12 12V7l4 1-4 1V12Z"/><path d="M7 8V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg>
+                        <span>Certifications</span>
+                    </a>
+                    <a href="#" class="nav-link flex items-center gap-1 px-3 py-1.5 rounded-lg text-gray-300 font-medium transition-all" data-screen="Gallary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Gallery</span>
+                    </a>
+                    <a href="#" class="nav-link flex items-center gap-1 px-3 py-1.5 rounded-lg text-gray-300 font-medium transition-all" data-screen="Contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto pt-24 px-4 pb-16 md:px-8">
+
+            <!-- Dashboard / Profile -->
+            <section id="dashboard-screen" class="screen-section active space-y-8">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                        Tallapalem Prudhvi Sai
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                        B.Tech Computer Science & Engineering student (2022–2026) | Passionate about building impactful software solutions | Quick learner and team player
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-5">
+                        <a href="resume (1).pdf" target="_blank"
+                        class="px-8 py-3 rounded-full font-semibold text-gray-400 border border-blue-500 hover:bg-blue-500 hover:bg-opacity-10 transition">
+                            View Resume
+                        </a>
+                    </div>
+
+                    <div class="mt-8 flex justify-center gap-8 text-3xl text-gray-400">
+                        <a href="https://github.com/prudhvisai8" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prudhvi-sai-tallapalem" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:prudhvisai641@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <!-- Add address -->
+                    <div class="mt-4 text-gray-400">
+                        <span class="hover:text-blue-400">📍 Kandukur, Andra Pradesh, India</span>
+                        </div>
+                </div>
+                <div class="section-card bg-clip-text border-slate-700 cols-fr p-6 text-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="section-card p-6 text-center">
+                        <p class="text-4xl font-bold text-blue-400">0</p>
+                        <p class="text-gray-400 mt-2">Internships</p>
+                    </div>
+                    <div class="section-card p-6 text-center">
+                        <p class="text-4xl font-bold text-blue-400">5</p>
+                        <p class="text-gray-400 mt-2">Projects</p>
+                    </div>
+                    <div class="section-card p-6 text-center">
+                        <p class="text-4xl font-bold text-purple-400">12+</p>
+                        <p class="text-gray-400 mt-2">Certifications</p>
+                    </div>
+                    <div class="section-card p-6 text-center">
+                        <p class="text-4xl font-bold text-green-400">Seeking</p>
+                        <p class="text-gray-400 mt-2">Opportunities</p>
+                    </div></div>
+                </div>
+                <div class="section-card p-6 text-left">
+                    <h2 class="text-2xl font-bold mb-4 text-cyan-300">About Me</h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        I am a dedicated Computer Science & Engineering student at Saveetha School of Engineering, passionate about leveraging technology to solve real-world problems. With a strong foundation in programming languages like Python, Java, and Kotlin, I enjoy building web applications and exploring machine learning techniques. I thrive in collaborative environments and am always eager to learn new skills and take on challenges that push my boundaries.
+                    </p>
+                </div>
+                <!-- Known spoken Languages -->
+                <div class="section-card p-6 text-left">
+                    <h2 class="text-2xl font-bold mb-4 text-green-300">Languages I Speak</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>English (Fluent)</li>
+                        <li>Telugu (Native)</li>
+                    </ul>
+                </div>
+                <div class="section-card p-6 text-left">
+                    <h2 class="text-2xl font-bold mb-4 text-orange-300">Recent Discoveries & Insights</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>**Simulation Complete:** Successfully simulated ground-state energy for "Projects Beta-2".</li>
+                    </ul>
+                </div>
+                
+            </section>
+
+            <!-- Education -->
+            <section id="Educations-screen" class="screen-section hidden space-y-8">
+                <div class="section-card p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-cyan-300 mb-6">Education</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="text-strong">
+                                <tr class="text-gray-200">
+                                    <th>Institute</th>
+                                    <th>Board / University</th>
+                                    <th>Program</th>
+                                    <th>Location</th>
+                                    <th>Score</th>
+                                    <th>Years</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr>
+                                    <td>Saveetha School of Engineering</td>
+                                    <td>Saveetha University</td>
+                                    <td>B.Tech - CSE</td>
+                                    <td>Chennai, Tamil Nadu</td>
+                                    <td>8.0 CGPA</td>
+                                    <td>2022 – 2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Sri Viveka Junior College</td>
+                                    <td>Board of Intermediate Education, AP</td>
+                                    <td>MPC</td>
+                                    <td>Kandukur, Andhra Pradesh</td>
+                                    <td>8.9/10</td>
+                                    <td>2020 – 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Sri Chaitanya High School</td>
+                                    <td>Board of Secondary Education, AP</td>
+                                    <td>SSC</td>
+                                    <td>Kandukur, Andhra Pradesh</td>
+                                    <td>9.8/10</td>
+                                    <td>2019 – 2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <div class="section-card p-6 md:p-8">
+                    <h3 class="text-2xl font-semibold mt-10 mb-8 text-cyan-300 pb-2">
+                        Technical Skills
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                        <div>
+                        <h4 class="text-lg font-bold text-gray-200 mb-4">Programming</h4>
+                        <div class="grid grid-cols-3 sm:grid-cols-8 gap-3">
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Python</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Java</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Kotlin</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">SQL</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div>
+                        <h4 class="text-lg font-bold text-gray-200 mb-4">Data & Analytics</h4>
+                        <div class="grid grid-cols-3 sm:grid-cols-8 gap-3">
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="path/to/Excel.png" alt="Excel" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Excel</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="path/to/powerbi-icon.png" alt="Power BI" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-center text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Power BI</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Pandas</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">NumPy</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div>
+                        <h4 class="text-lg font-bold text-gray-200 mb-4">Web Development</h4>
+                        <div class="grid grid-cols-3 sm:grid-cols-8 gap-3">
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">HTML</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">CSS</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">JS</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div>
+                        <h4 class="text-lg font-bold text-gray-200 mb-4">Tools & Platforms</h4>
+                        <div class="grid grid-cols-3 sm:grid-cols-8 gap-3">
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Git</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-10 h-10 filter invert">
+                            </div>
+                            <span class="text-xs text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">GitHub</span>
+                            </div>
+                            <div class="flex flex-col items-center group">
+                            <div class="w-16 h-16 bg-clip-text rounded-lg flex items-center justify-center mb-2 shadow-lg group-hover:scale-110 transition-transform duration-300 border border-slate-700 group-hover:border-cyan-300">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" class="w-10 h-10">
+                            </div>
+                            <span class="text-xs text-center text-gray-400 font-medium group-hover:text-cyan-300 transition-colors">Android Studio</span>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <div class="section-card p-6 md:p-8">
+                        <h3 class="text-2xl font-semibold mt-10 mb-8 text-cyan-200">Experience & Growth Path</h3>
+                        
+                        <div class="relative ml-4 border-l-2 border-cyan-500/30">
+                            
+                            <div class="mb-10 ml-6">
+                                <span class="absolute -left-[9px] mt-1 flex h-4 w-4 items-center justify-center rounded-full bg-cyan-500 shadow-[0_0_10px_#06b6d4]"></span>
+                                <h4 class="text-lg font-bold text-cyan-300">Foundation</h4>
+                                <p class="text-sm text-gray-400">Education & Core Fundamentals</p>
+                                <p class="mt-2 text-gray-300">Completed academic training in Computer Science/Data Analytics, establishing a strong base in Programming and Logic.</p>
+                            </div>
+
+                            <div class="mb-10 ml-6">
+                                <span class="absolute -left-[9px] mt-1 flex h-4 w-4 items-center justify-center rounded-full bg-cyan-500 shadow-[0_0_10px_#06b6d4]"></span>
+                                <h4 class="text-lg font-bold text-cyan-300">Technical Specialization</h4>
+                                <p class="text-sm text-gray-400">Current Focus</p>
+                                <ul class="mt-2 list-disc list-inside text-gray-300 space-y-1">
+                                    <li>Advanced Python & Data Science libraries (Pandas, NumPy)</li>
+                                    <li>Developing Android Applications with Kotlin</li>
+                                    <li>Database Management & SQL optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="ml-6">
+                                <span class="absolute -left-[9px] mt-1 flex h-4 w-4 items-center justify-center rounded-full bg-green-400 animate-pulse shadow-[0_0_10px_#4ade80]"></span>
+                                <h4 class="text-lg font-bold text-green-400">Ready for Challenges</h4>
+                                <p class="text-sm text-gray-400">Available for Internships / Junior Roles</p>
+                                <p class="mt-2 text-gray-300 italic">"Actively seeking opportunities to apply my technical toolkit to real-world problems and contribute to impactful projects."</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Projects -->
+            <section id="Projects-screen" class="screen-section hidden space-y-8">
+                <div class="section-card p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-purple-300 mb-6">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition">
+                            <div class="h-48 bg-gradient-to-br from-purple-900 to-indigo-900 flex items-center justify-center">
+                                <i class="fas fa-brain text-6xl text-purple-300 opacity-60"></i>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-semibold mb-2">Sentiment Analysis Dashboard</h3>
+                                <p class="text-gray-400 mb-4">Web app to analyze product reviews using NLP</p>
+                                <a href="https://github.com/yourusername/sentiment-analysis-dashboard" class="text-purple-400 hover:text-purple-300">View Project</a>
+                                <a href="https://sentiment-dashboard.example.com" class="ml-4 text-purple-400 hover:text-purple-300">Live Demo</a>
+                                <p class="text-sm text-gray-500">Python • Flask • NLTK • Chart.js</p>
+                            </div>
+                        </div>
+                        <!-- Add 4 more similar project cards with your real projects -->
+                        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition">
+                            <div class="h-48 bg-gradient-to-br from-cyan-900 to-teal-900 flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-6xl text-cyan-300 opacity-60"></i>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-semibold mb-2">Campus Event Manager (Android)</h3>
+                                <p class="text-gray-400 mb-4">App for students to discover and register for events</p>
+                                <a href="https://github.com/yourusername/campus-event-manager" class="text-purple-400 hover:text-purple-300">View Project</a>
+                                <a href="https://campus-event-manager.example.com" class="ml-4 text-purple-400 hover:text-purple-300">Live Demo</a>
+                                <p class="text-sm text-gray-500">Kotlin • Firebase • Android Studio</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition">
+                            <div class="h-48 bg-gradient-to-br from-green-900 to-yellow-900 flex items-center justify-center">
+                                <i class="fas fa-chart-line text-6xl text-green-300 opacity-60"></i>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-semibold mb-2">Sales Data Analyzer</h3>
+                                <p class="text-gray-400 mb-4">Tool to visualize and analyze sales data trends</p>
+                                <a href="https://github.com/yourusername/sales-data-analyzer" class="text-purple-400 hover:text-purple-300">View Project</a>
+                                <a href="https://sales-data-analyzer.example.com" class="ml-4 text-purple-400 hover:text-purple-300">Live Demo</a>
+                                <p class="text-sm text-gray-500">Python • Pandas • Matplotlib</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition">
+                            <div class="h-48 bg-gradient-to-br from-red-900 to-pink-900 flex items-center justify-center">
+                                <i class="fas fa-shopping-cart text-6xl text-red-300 opacity-60"></i>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
+                                <p class="text-gray-400 mb-4">Full-stack e-commerce platform with user authentication</p>
+                                <a href="https://github.com/yourusername/e-commerce-website" class="text-purple-400 hover:text-purple-300">View Project</a>
+                                <a href="https://e-commerce-website.example.com" class="ml-4 text-purple-400 hover:text-purple-300">Live Demo</a>
+                                <p class="text-sm text-gray-500">React • Node.js • MongoDB</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition">
+                            <div class="h-48 bg-gradient-to-br from-yellow-900 to-orange-900 flex items-center justify-center">
+                                <i class="fas fa-robot text-6xl text-yellow-300 opacity-60"></i>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-semibold mb-2">Chatbot for Student Queries</h3>
+                                <p class="text-gray-400 mb-4">AI-powered chatbot to assist students with common questions</p>
+                                <a href="https://github.com/yourusername/chatbot-student-queries" class="text-purple-400 hover:text-purple-300">View Project</a>
+                                <a href="https://chatbot-student-queries.example.com" class="ml-4 text-purple-400 hover:text-purple-300">Live Demo</a>
+                                <p class="text-sm text-gray-500">Python • Flask • Dialogflow</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition">
+                            <div class="h-48 bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-6xl text-blue-300 opacity-60"></i>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-semibold mb-2">Local Event Finder</h3>
+                                <p class="text-gray-400 mb-4">Web app to find and RSVP to local events based on location</p>
+                                <a href="https://github.com/yourusername/local-event-finder" class="text-purple-400 hover:text-purple-300">View Project</a>
+                                <a href="https://local-event-finder.example.com" class="ml-4 text-purple-400 hover:text-purple-300">Live Demo</a>
+                                <p class="text-sm text-gray-500">React • Node.js • MongoDB</p>
+                            </div>
+                        </div>
+                        <!-- Repeat pattern for other projects -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="Certifications-screen" class="screen-section hidden space-y-8">
+                <div class="section-card p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-orange-300 mb-6">Certifications</h2>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-certificate text-orange-400 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-lg"><a href="https://www.coursera.org/account/accomplishments/certificate/ABC123" target="_blank" class="hover:text-orange-400">Google Data Analytics Professional Certificate</a></strong>
+                                <p class="text-gray-400">Google (Coursera)</p>
+                                <p class="text-gray-400">2024</p>
+
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-certificate text-orange-400 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-lg"><a href="https://www.coursera.org/account/accomplishments/certificate/DEF456" target="_blank" class="hover:text-orange-400">Python for Everybody</a></strong>
+                                <p class="text-gray-400">University of Michigan (Coursera)</p>
+                                <p class="text-gray-400">2023</p>
+                            </div>
+                        </li>
+                        <!-- Add more real certificates -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Gallary -->
+            <section id="Gallary-screen" class="screen-section hidden space-y-8">
+            <div class="section-card p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-green-300 mb-6">Gallery</h2>
+
+                <div class="Gallary-container grid grid-cols-auto gap-6">
+                    <img src="Certifications/oracle certification.jpg" class="Gallary-img" alt="">
+                    <img src="Certifications/iot.png" class="Gallary-img" alt="">
+                    <img src="Certifications/google_analytics.png" class="Gallary-img" alt="">
+                    <img src="Certifications/python_gfg.png" class="Gallary-img" alt="">
+                    <img src="Certifications/DA_FCC.jpeg" class="Gallary-img" alt="">
+                    <img src="Certifications/wordpress.png" class="Gallary-img" alt="">
+                    <img src="Certifications/aws_PE.png" class="Gallary-img" alt="">
+                    <img src="Certifications/aws_AIpractices.png" class="Gallary-img" alt="">
+                    <img src="Certifications/aws_responsibleAI.png" class="Gallary-img" alt="">
+                    <img src="Certifications/certificate3.png" class="Gallary-img" alt="">
+                    <img src="Certifications/infosys.png" class="Gallary-img" alt="">
+                    <img src="Certifications/hp.png" class="Gallary-img" alt="">
+                    <img src="Certifications/sql.jpeg" class="Gallary-img" alt="">
+                    <img src="Certifications/udemy js.jpg" class="Gallary-img" alt="">
+                    <img src="Certifications/udemy mySql.jpg" class="Gallary-img" alt="">
+                    <img src="Certifications/certificate1.png" class="Gallary-img" alt="">
+                    <img src="Certifications/AItool_workshop.png" class="Gallary-img" alt="">
+                    <img src="Certifications/cloud_webinar.png" class="Gallary-img" alt="">
+                    <img src="Certifications/kimo_workshop.jpeg" class="Gallary-img" alt="">
+                    <img src="Certifications/autocad.jpg" class="Gallary-img" alt="">
+                    <img src="Certifications/RMK.png" class="Gallary-img" alt="">
+                    <img src="Certifications/tda.png" class="Gallary-img" alt="">
+                    <img src="Certifications/quiz.jpeg" class="Gallary-img" alt="">
+                    <img src="Certifications/Quiz (2).jpeg" class="Gallary-img" alt="">
+                    <img src="Certifications/CodeChefBadge.png" class="Gallary-img" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox hidden">
+            <button class="nav left" id="prevBtn">&#10094;</button>
+
+            <img id="lightbox-img" alt="Expanded Image">
+
+            <button class="nav right" id="nextBtn">&#10095;</button>
+            <span class="close" id="closeBtn">&times;</span>
+        </div>
+
+
+            <!-- Contact -->
+            <section id="Contact-screen" class="screen-section hidden space-y-8">
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-300 to-purple-400 bg-clip-text text-transparent mb-8 text-center">Get In Touch</h2>
+                <div class="text-left mb-8">
+                    <p class="text-lg text-gray-300 max-w-2xl mx-auto">Feel free to reach out! Whether you have a question, project opportunity, or just want to chat about tech, I'd love to hear from you.</p>
+                </div>
+                <div class="section-card p-6 md:p-8 max-w-3xl mx-auto">
+                <div class="max-w-2xl mx-auto">
+                    <form id="contactForm" action="https://formspree.io/f/your-id" method="POST" class="space-y-6 max-w-2xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="relative group">
+                                <label for="name" class="block text-sm font-medium text-cyan-300 mb-2 ml-1">Name</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500 group-focus-within:text-cyan-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    </span>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required 
+                                        class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300">
+                                </div>
+                            </div>
+
+                            <div class="relative group">
+                                <label for="email" class="block text-sm font-medium text-cyan-300 mb-2 ml-1">Email</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500 group-focus-within:text-cyan-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    </span>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required 
+                                        class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative group">
+                            <label for="subject" class="block text-sm font-medium text-cyan-300 mb-2 ml-1">Subject</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500 group-focus-within:text-cyan-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-1.9a1 1 0 0 0 .27-.71V15c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2H6.41a1 1 0 0 1-.71-.29L3 21Z"/><path d="M15 7h.01"/><path d="M18 11h.01"/><path d="M11 7h.01"/><path d="M8 11h.01"/><path d="M10 3h4a8 8 0 0 1 8 8v0a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v0a8 8 0 0 1 8-8Z"/></svg>
+                                </span>
+                                <input type="text" id="subject" name="subject" placeholder="How can I help?" required 
+                                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <div class="relative group">
+                            <label for="message" class="block text-sm font-medium text-cyan-300 mb-2 ml-1">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message here..." required 
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300 resize-none"></textarea>
+                        </div>
+
+                        <div class="text-right">
+                            <button type="submit" id="submitBtn" 
+                                class="group relative inline-flex items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-cyan-600 rounded-full hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-600 shadow-[0_0_15px_rgba(8,145,178,0.4)] hover:shadow-[0_0_25px_rgba(8,145,178,0.6)] hover:-translate-y-1">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-center text-gray-400 mt-6" id="formStatus"></div>
+                <div class="mt-10 flex justify-center gap-8 text-3xl text-gray-400">
+                    <a href="https://github.com/prudhvisai8" target="_blank" class="hover:text-blue-400 transition duration-200"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prudhvi-sai-tallapalem" target="_blank" class="hover:text-blue-400 transition duration-200"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:prudhvisai641@gmail.com" class="hover:text-blue-400 transition duration-200"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="text-center mt-4 text-gray-400">
+                    <p class="text-lg">📍 Kandukur, Andra Pradesh, India</p>
+                    <p class="text-lg">+91 9381905772</p>
+                </div>
+                </div>
+            </section>
+        
+    </main>
+
+
+    <!-- Image Viewer Modal -->
+    <div id="imageViewer" class="fixed inset-0 bg-black/95 hidden z-50 flex items-center justify-center p-4">
+        <button onclick="closeViewer()" class="absolute top-6 right-6 text-white text-5xl hover:text-red-400 transition">
+            ×
+        </button>
+        <img id="viewerImg" class="max-w-[90%] max-h-[90%] rounded-xl object-contain" alt="Gallary image">
+    </div>
+
+            <script>
+                const screens = ['dashboard-screen', 'Educations-screen', 'Projects-screen', 'Certifications-screen', 'Gallary-screen', 'Contact-screen'];
+                
+                function showScreen(screenId) {
+                    screens.forEach(id => {
+                        document.getElementById(id).classList.toggle('hidden', id !== screenId);
+                        document.getElementById(id).classList.toggle('active', id === screenId);
+                    });
+
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        const isActive = link.dataset.screen + '-screen' === screenId;
+                        link.classList.toggle('active', isActive);
+                    });
+                }
+
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        showScreen(link.dataset.screen + '-screen');
+                    });
+                });
+
+
+                // Start on dashboard
+                showScreen('dashboard-screen');
+            </script>
+
+
+
+            <script>
+                const images = document.querySelectorAll('.Gallary-img');
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightbox-img');
+
+                let currentIndex = 0;
+
+                images.forEach((img, index) => {
+                    img.addEventListener('click', () => openLightbox(index));
+                });
+
+                function openLightbox(index) {
+                    currentIndex = index;
+                    lightboxImg.src = images[currentIndex].src;
+                    lightbox.classList.remove('hidden');
+                }
+
+                function closeLightbox() {
+                    lightbox.classList.add('hidden');
+                }
+
+                function showNext() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    lightboxImg.src = images[currentIndex].src;
+                }
+
+                function showPrev() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    lightboxImg.src = images[currentIndex].src;
+                }
+
+                document.getElementById('nextBtn').addEventListener('click', showNext);
+                document.getElementById('prevBtn').addEventListener('click', showPrev);
+                document.getElementById('closeBtn').addEventListener('click', closeLightbox);
+
+                document.addEventListener('keydown', (e) => {
+                    if (lightbox.classList.contains('hidden')) return;
+
+                    if (e.key === 'ArrowRight') showNext();
+                    if (e.key === 'ArrowLeft') showPrev();
+                    if (e.key === 'Escape') closeLightbox();
+                });
+            </script>
+
+            <script>
+                const contactForm = document.getElementById('contactForm');
+                const status = document.getElementById('form-status');
+                const submitBtn = document.getElementById('submitBtn');
+
+                contactForm.addEventListener("submit", async function(event) {
+                    event.preventDefault(); // Prevent page reload
+                    
+                    // Change button state
+                    const originalBtnText = submitBtn.innerHTML;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = "Sending...";
+
+                    const data = new FormData(event.target);
+                    
+                    try {
+                        const response = await fetch(event.target.action, {
+                            method: contactForm.method,
+                            body: data,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            status.innerHTML = "✅ Message sent successfully!";
+                            status.classList.add("text-green-400");
+                            contactForm.reset(); // Clear the form
+                        } else {
+                            const result = await response.json();
+                            status.innerHTML = "❌ Oops! There was a problem.";
+                            status.classList.add("text-red-400");
+                        }
+                    } catch (error) {
+                        status.innerHTML = "❌ Error connecting to the server.";
+                        status.classList.add("text-red-400");
+                    } finally {
+                        // Reset button state
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                        
+                        // Clear status after 5 seconds
+                        setTimeout(() => {
+                            status.innerHTML = "";
+                            status.className = "mt-4 text-center font-medium";
+                        }, 5000);
+                    }
+                });
+            </script>
+    </body>
+</html>
