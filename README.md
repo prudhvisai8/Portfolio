@@ -40,7 +40,6 @@ A modern, responsive, and high-performance portfolio website designed to showcas
 ```text
 ├── assets/
 │   ├── images/         # Project screenshots and gallery images
-│   └── css/            # Custom styles (if any)
 ├── index.html          # Main entry point
-├── script.js           # Navigation logic and form handling
+├── style.css          # Custom styles
 └── README.md           # Project documentation
