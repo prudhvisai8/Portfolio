@@ -5,11 +5,11 @@
             }
         body {
             font-family: 'Quicksand', sans-serif;
-            background: #0a1839;
-            min-height: 100vh;
+            background: #04153b;
+            min-height:auto;
         }
         .nav-bar {
-            background: #0a183997;
+            background: #04153b;
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
@@ -17,7 +17,7 @@
             transition: all 0.25s ease;
         }
         .nav-link:hover {
-            color: #aca3ff !important;
+            color: #cb51ff;
             transform: translateY(-1px);
         }
         .nav-link.active {
@@ -44,28 +44,34 @@
             transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
         table {
-            border-collapse: separate;
-            border-spacing: 0 0.5rem;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        overflow: hidden;
+        border-radius: 0.75rem;
         }
+
         th, td {
-            padding: 0.9rem 1.1rem;
+        padding: 1rem 1.2rem;
         }
-        td{
-            background-color: #0a1839;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
+
         th {
-            background: rgba(28, 57, 102, 0.799);
-            font-weight: 600;
+        background: rgba(28, 57, 102, 0.85);
+        font-weight: 600;
+        }
+
+        td {
+        background: #0a1839;
+        border-top: 1px solid rgba(255,255,255,0.08);
         }
         tr {
-            background: rgba(30,41,59,0.4);
-            transition: 0.2s;
+        transition: background 0.25s ease;
         }
+
         tr:hover {
-            background: rgba(45, 55, 75, 0.6);
+        background: rgba(45, 55, 75, 0.65);
         }
+
         @media (max-width: 640px) {
             .nav-links-container {
                 flex-direction: column;
@@ -119,8 +125,13 @@
             top: 20px;
             right: 30px;
             font-size: 35px;
-            color: #ffffff5e;
+            color: #e2d5d5;
             cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .lightbox .close:hover {
+            color: #ff4d4d;
         }
 
         .nav {
@@ -141,4 +152,21 @@
 
         .hidden {
             display: none;
+        }
+        /* Footer Base */
+        .footer {
+        background: #111a476f;
+        color: #dfdfdf;
+        padding: 4.5rem 1.5rem 2rem;
+        font-family: "Inter", Arial, sans-serif;
+        margin-bottom:auto ;
+        }
+
+        /* Layout */
+        .footer-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 3rem;
         }
