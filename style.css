@@ -69,7 +69,7 @@
         }
 
         tr:hover {
-        background: rgba(45, 55, 75, 0.65);
+        background: rgba(95, 122, 255, 0.1);
         }
 
         @media (max-width: 640px) {
@@ -169,4 +169,60 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 3rem;
+        }
+        .glass-card {
+            backdrop-filter: blur(16px);
+            background: var(--glass-bg, rgba(95, 122, 255, 0.1));
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #bc9a04 0%, #88b403 100%);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -5px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
+            background: #d6d6d7;
+            border: 3px solid #00bd00;
+            border-radius: 50%;
+            z-index: 10;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+
+        .skill-tag {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.249);
+            border: 1px solid #34373a;
+        }
+
+        .skill-tag:hover {
+            background: #4e4e4e;
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+            border-color: #3b82f6;
+            transform: scale(1.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
         }
